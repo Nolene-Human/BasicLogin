@@ -1,4 +1,10 @@
-# Step 1: Basic Python program to check if the password entered is correct or not
+""" Step 1: Basic Python Terminal Login Page
+This is a simple Python project asking the user for a password, validating the user's input after three incorrect attempts giving an error message, or login user with a welcome message.
+  Vulnerabilities:
+  - Password saved in code
+  - Username Enumeration
+  - Weak Password """
+
 x=3
 password="Password"
 
