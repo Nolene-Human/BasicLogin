@@ -9,17 +9,17 @@ Working with the principle of starting simple, we will gradually improve the sec
 ## MVP 1: LOGIN
 I started by building a simple Python terminal login page. The goal is to get the logic based on the acceptance criteria set out in my user stories and pass the testing before scaling it up to Flask 
 
-|AC1 | AC2 |
-| --------------------------------------------------| ------------------------------------------------ |
-| The Login page should request the user to enter   |If a user enters an incorrect username or password| 
-|• Username                                         |more than three times consecutively,              |
-|• Password                                         |the system must:                                  |
-|• Authentication code                              |Display an error message indicating that the      |
-|                                                   |failed attempt limit has been exceeded.           |
-|                                                   |Block the user's account to prevent further       |
-|                                                   |login attempts.Provide options for the user to    |
-|                                                   |either register a new account or reset their      |
-|                                                   |password.                                         |
+|AC1 | AC2 | AC5 |
+| --------------------------------------------------|------| ------------------------------------------------ |
+| The Login page should request the user to enter   |All fields must be compulsory |If a user enters an incorrect username or password| 
+|• Username                                         |and not allow user to login if one or more fields are is missing|more than three times consecutively,              |
+|• Password                                         ||the system must:                                  |
+|• Authentication code                              ||Display an error message indicating that the      |
+|                                                   ||failed attempt limit has been exceeded.           |
+|                                                   ||Block the user's account to prevent further       |
+|                                                   ||login attempts.Provide options for the user to    |
+|                                                   ||either register a new account or reset their      |
+|                                                   ||password.                                         |
 
 
 
