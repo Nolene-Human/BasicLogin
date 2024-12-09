@@ -9,7 +9,7 @@ Working with the principle of starting simple, we will gradually improve the sec
 ## MVP 1: LOGIN
 I started by building a simple Python terminal login page. The goal is to get the logic based on the acceptance criteria set out in my user stories and pass the testing before scaling it up to Flask 
 
-|Python Terminal Login Page Acceptance_Criteria #1  | Python Terminal Login Page Acceptance_Criteria#5 |
+|AC1 | AC2 |
 | --------------------------------------------------| ------------------------------------------------ |
 | The Login page should request the user to enter   |If a user enters an incorrect username or password| 
 |• Username                                         |more than three times consecutively,              |
