@@ -12,7 +12,7 @@ I started by building a simple Python terminal login page. The goal is to get th
 | AC1 | AC2 | AC3 | AC5 | 
 |-----|-----|-----|-----|
 | The Login page should request the user to enter   |All fields must be compulsory |When the incorrect username or password has been entered then the system should notify the user to retry.|If a user enters an incorrect username or password more than three times consecutively,the system must:| 
-|• Username                                         |and not allow user to login if one or more fields are is missing||Display an error message indicating that the failed attempt limit has been exceeded.|
+|• Username                                         |and not allow user to login if one or more fields are is missing|RISK: Username Enumeration|Display an error message indicating that the failed attempt limit has been exceeded.|
 |• Password                                         |||Block the user's account to prevent further login attempts.|  
 |• Authentication code                              |||Provide options for the user to either register a new account or reset their password.|     
 
