@@ -1,7 +1,9 @@
+# **version 2**
+
 # MVP 1: Pyton login page
 """
 *** SECURITY CHECK ***
-Login screen should not through any way increase the risk of Username Enumeration.
+The login screen should not increase the risk of Username Enumeration.
 
 Do not provide any information that can be used to determine if a username is valid or invalid. This includes but is not limited to:
 - Error messages that indicate whether a username is valid or invalid
@@ -14,14 +16,14 @@ Open application
 enter correct username
 enter incorrect password
 **Expected Result**
-if incorrect password is entered notify user that the combination entered is not correct
+if an incorrect password is entered notify the user that the combination entered is not correct
 
 **Action 2**
 Open application
 enter incorrect username
 enter correct password
 **Expected Result**
-if incorrect username is entered notify user that the combination entered is not correct
+if an incorrect username is entered notify the user that the combination entered is not correct
 """
 
 x=3
@@ -33,7 +35,16 @@ otp="1234"
 
 while x>0:
     usernamecheck=input("Please enter your Username : ")
+    while usernamecheck == "":
+        print("Username is required")
+        usernamecheck=input("Please enter your Username : ")
+
     passwordcheck=input("Please enter your Password: ")
+    while passwordcheck == "":
+        print("Password is required")
+        passwordcheck=input("Please enter your Password : ")
+
+
     if username==usernamecheck and password == passwordcheck:
         x=0
         while y>0:
@@ -59,4 +70,3 @@ while x>0:
             # "or contact support" -- Do not have support as a actor identified in my use case but have future improvement identified as user experience.
             #BACKLOG: BLOG3 User experience: In case the user thinks they are providing the correct information or feels like they are going in a loop direct the user to other ways to authenticate or a page."""
             break
-            
